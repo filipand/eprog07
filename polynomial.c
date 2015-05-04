@@ -46,7 +46,3 @@ void setPolyCoefficient(Polynomial* X, int i, double polI) {
     X->koef_vector[i] = polI;
 }
 
-int main() {
-    return 0;
-}
-
