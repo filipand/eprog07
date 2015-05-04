@@ -10,7 +10,7 @@ typedef struct _polynomial_ {
 Polynomial* newPoly(int n) { // n ist Grad des Polynoms
     int i = 0;
     Polynomial* X = NULL;
-    assert(n > 0);
+    assert(n >= 0);
     X = malloc(sizeof(Polynomial));
     assert(X != NULL);
     X->grad = n;

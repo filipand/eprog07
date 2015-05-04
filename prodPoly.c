@@ -36,6 +36,10 @@ void test_prodPoly() {
     assert(getPolyCoefficient(r, 2) == 8);
     assert(getPolyCoefficient(r, 1) == -19);
     assert(getPolyCoefficient(r, 0) == -21);
+
+    delPoly(p);
+    delPoly(q);
+    delPoly(r);
 }
 
 int main() {
