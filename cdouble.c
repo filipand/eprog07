@@ -13,6 +13,7 @@ cdouble* newCDouble(double a, double b) {
 
 cdouble* delCDouble(cdouble* c) {
 	free(c);
+	c = NULL;
 	assert(c == NULL);
 	return c;
 }

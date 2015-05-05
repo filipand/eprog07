@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "cdouble.c"
 
 cdouble* cadd(cdouble* x, cdouble* y);
@@ -66,5 +67,5 @@ cdouble* cdiv(cdouble* x, cdouble* y) {
 
 //(a + bi)(a - bi) = a^2 + b^2
 double cnorm(cdouble* c) {
-	return getCDoubleReal(c) * getCDoubleReal(c) + getCDoubleImag(c) * getCDoubleImag(c);
+	return sqrt(getCDoubleReal(c) * getCDoubleReal(c) + getCDoubleImag(c) * getCDoubleImag(c));
 }
