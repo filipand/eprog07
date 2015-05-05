@@ -54,7 +54,7 @@ Polynomial* inputPolynomial() {
     int n = 0;
     double input = 0;
 
-    printf("Dimension des Polynoms n=");
+    printf("Grad des Polynoms n=");
     scanf("%d",&n);
     assert(n > 0);
 
